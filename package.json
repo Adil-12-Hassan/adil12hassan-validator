@@ -16,9 +16,6 @@
         "javascript",
         "vanilla-js"
     ],
-    "author": "Syed Adil Hassan(adil12hassan)",
-    "license": "MIT",
-    "dependencies": {
-        "hassan-validator": "^0.1.0"
-    }
+    "author": "Syed Adil Hassan (adil12hassan)",
+    "license": "MIT"
 }
