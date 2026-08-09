@@ -1,0 +1,12 @@
+
+After saving it, our package will have:
+
+```text
+Hassan Validator
+├── src/
+│   └── validator.js
+├── test/
+│   └── validator.test.js
+├── package.json
+├── README.md
+└── .gitignore

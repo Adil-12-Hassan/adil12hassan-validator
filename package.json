@@ -1,0 +1,21 @@
+{
+    "name": "hassan-validator",
+    "version": "0.1.0",
+    "description": "A lightweight JavaScript validator library.",
+    "type": "module",
+    "main": "./src/validator.js",
+    "exports": {
+        ".": "./src/validator.js"
+    },
+    "scripts": {
+        "test": "node --test"
+    },
+    "keywords": [
+        "validator",
+        "validation",
+        "javascript",
+        "vanilla-js"
+    ],
+    "author": "Syed Adil Hassan(adil12hassan)",
+    "license": "MIT"
+}
