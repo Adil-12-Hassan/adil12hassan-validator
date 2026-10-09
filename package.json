@@ -1,12 +1,17 @@
 {
     "name": "hassan-validator",
     "version": "0.1.1",
-    "description": "A lightweight JavaScript validator library.",
+    "description": "A lightweight JavaScript validation library.",
     "type": "module",
     "main": "./src/validator.js",
     "exports": {
         ".": "./src/validator.js"
     },
+    "files": [
+        "src/",
+        "README.md",
+        "LICENSE"
+    ],
     "scripts": {
         "test": "node --test"
     },
