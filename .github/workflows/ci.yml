@@ -1,0 +1,31 @@
+name: CI Pipeline
+
+# 1. Triggers: When should this workflow run?
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+# 2. Jobs: Group of steps executed on the same runner
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest # Environment/Runner type
+
+    steps:
+      # Step 1: Check out repository code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Step 3: Run scripts (CI tasks)
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
